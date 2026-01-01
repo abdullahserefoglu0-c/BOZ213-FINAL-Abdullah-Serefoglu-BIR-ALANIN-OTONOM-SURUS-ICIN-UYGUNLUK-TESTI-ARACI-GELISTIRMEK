@@ -51,7 +51,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 
 ### 1. Repoyu Klonlayın
 ```bash
-git clone [https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git](https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git)
+git clone [[https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git](https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git)](https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK/tree/main)
 cd autonomous-vehicle-risk-analyzer
 2. Sanal Ortam Oluşturun (Önerilen)
 Bash
