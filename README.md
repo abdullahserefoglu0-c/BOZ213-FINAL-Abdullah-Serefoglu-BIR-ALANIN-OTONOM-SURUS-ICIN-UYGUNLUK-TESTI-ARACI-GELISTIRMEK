@@ -1,13 +1,13 @@
-#  Otonom Sürüş İçin Güzergah Uygunluk ve Risk Analiz Aracı (AI Vehicle Risk Analyzer)
+#  BİR ALANIN OTONOM SÜRÜŞ İÇİN UYGUNLUK TESTİ ARACI GELİŞTİRMEK
 
-> **Ders:** BOZ213 Nesne Yönelimli Programlama (OOP)  
-> **Proje Türü:** Final Projesi  
-> **Geliştirici:** Abdullah Şerefoğlu  
+> **Ders:** BOZ213 Nesne Yönelimli Programlama (OOP)
+> **Proje Türü:** Final Projesi
+> **Geliştirici:** Abdullah Şerefoğlu
 > **Durum:** Tamamlandı (v1.0)
 
 ---
 
-## 📋 Proje Hakkında
+##  Proje Hakkında
 Bu proje, otonom araçların seyir güvenliğini artırmak ve belirli bir güzergahın otonom sürüşe uygunluğunu (Suitability) test etmek amacıyla geliştirilmiş yapay zeka destekli bir simülasyon ve analiz yazılımıdır.
 
 Yazılım, **YOLOv8** derin öğrenme modelini kullanarak trafik akışındaki dinamik nesneleri (araç, yaya, bisiklet vb.) gerçek zamanlı tespit eder. Tespit edilen nesnelerin vektörel hareketlerini analiz ederek potansiyel çarpışma risklerini, şerit ihlallerini ve takip mesafesi uyarılarını hesaplar. Analiz sonunda, güzergahın risk haritasını içeren detaylı bir **PDF Raporu** oluşturur.
