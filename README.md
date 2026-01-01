@@ -1,1 +1,109 @@
-# BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK
+#  Otonom Sürüş İçin Güzergah Uygunluk ve Risk Analiz Aracı (AI Vehicle Risk Analyzer)
+
+> **Ders:** BOZ213 Nesne Yönelimli Programlama (OOP)  
+> **Proje Türü:** Final Projesi  
+> **Geliştirici:** Abdullah Şerefoğlu  
+> **Durum:** Tamamlandı (v1.0)
+
+---
+
+## 📋 Proje Hakkında
+Bu proje, otonom araçların seyir güvenliğini artırmak ve belirli bir güzergahın otonom sürüşe uygunluğunu (Suitability) test etmek amacıyla geliştirilmiş yapay zeka destekli bir simülasyon ve analiz yazılımıdır.
+
+Yazılım, **YOLOv8** derin öğrenme modelini kullanarak trafik akışındaki dinamik nesneleri (araç, yaya, bisiklet vb.) gerçek zamanlı tespit eder. Tespit edilen nesnelerin vektörel hareketlerini analiz ederek potansiyel çarpışma risklerini, şerit ihlallerini ve takip mesafesi uyarılarını hesaplar. Analiz sonunda, güzergahın risk haritasını içeren detaylı bir **PDF Raporu** oluşturur.
+
+---
+
+##  Temel Özellikler
+
+* **Gerçek Zamanlı Nesne Tespiti:** YOLOv8 Nano modeli ile yüksek performanslı araç ve yaya tespiti.
+* **Dinamik Risk Analizi:**
+    * **Çarpışma Riski (TTC):** Araca tehlikeli hızla yaklaşan nesnelerin tespiti.
+    * **Yanal Hareket Analizi:** Önüne kırma (Cut-in) ve şerit ihlallerinin vektörel analizi.
+* **Akıllı Bölge Kontrolü:** "Takip Mesafesi" ve "Çarpışma Bölgesi" ihlallerinin anlık izlenmesi.
+* **Ortam Farkındalığı:** Gece/Gündüz modunu otomatik algılayarak risk katsayılarını dinamik olarak ayarlar.
+* **Profesyonel Raporlama:**
+    * Güzergah üzerine bindirilmiş (Overlay) **Isı Haritası (Heatmap)**.
+    * Risk istatistiklerini içeren grafikler.
+    * Otonom sürüş uygunluk skoru (%0 - %100).
+    * QR Kod ile doğrulanabilir PDF çıktısı.
+
+---
+
+##  Kullanılan Teknolojiler ve Kütüphaneler
+
+Proje, **Python 3.10+** kullanılarak geliştirilmiştir. Aşağıdaki temel kütüphanelerden yararlanılmıştır:
+
+| Kütüphane | Kullanım Amacı |
+| :--- | :--- |
+| **Ultralytics (YOLOv8)** | Nesne tespiti ve takibi (Object Detection & Tracking). |
+| **OpenCV (cv2)** | Görüntü işleme, çizim işlemleri ve ısı haritası oluşturma. |
+| **PySide6 (Qt)** | Modern, responsive ve thread-safe kullanıcı arayüzü (GUI). |
+| **ReportLab** | Vektörel tabanlı profesyonel PDF raporlarının oluşturulması. |
+| **NumPy** | Vektörel hız ve mesafe hesaplamaları (Öklid, matris işlemleri). |
+| **Matplotlib** | İstatistiksel verilerin grafiklere dökülmesi. |
+
+---
+
+##  Kurulum ve Çalıştırma (Installation)
+
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+### 1. Repoyu Klonlayın
+```bash
+git clone [https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git](https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git)
+cd autonomous-vehicle-risk-analyzer
+2. Sanal Ortam Oluşturun (Önerilen)
+Bash
+
+python -m venv venv
+# Windows için:
+.\venv\Scripts\activate
+# Mac/Linux için:
+source venv/bin/activate
+3. Gereksinimleri Yükleyin
+Bash
+
+pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] Pillow numpy
+4. Uygulamayı Başlatın
+Bash
+
+python "otonom araç projem.py"
+(Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.)
+
+ Yazılım Mimarisi ve OOP Prensipleri
+Bu proje, "Temiz Kod" (Clean Code) standartlarına ve Nesne Yönelimli Programlama (OOP) ilkelerine sadık kalınarak tasarlanmıştır.
+
+1. Sınıflar ve Sorumluluklar
+MainWindow(QMainWindow): Kullanıcı arayüzünü yönetir. Ayarların kapsüllenmesi (Encapsulation) ve kullanıcı etkileşimlerinin işlenmesinden sorumludur.
+
+VideoThread(QThread): Görüntü işleme yükünü ana arayüzden ayırır (Multithreading). YOLO analizi, matematiksel hesaplamalar ve veri işleme bu sınıfta soyutlanmıştır (Abstraction).
+
+2. Kullanılan OOP Prensipleri
+Kalıtım (Inheritance): VideoThread sınıfı QThread sınıfından; MainWindow sınıfı QMainWindow sınıfından türetilmiştir.
+
+Çok Biçimlilik (Polymorphism): run() ve closeEvent() gibi temel metotlar override edilerek projenin ihtiyaçlarına göre yeniden şekillendirilmiştir.
+
+Kapsülleme (Encapsulation): Kritik veriler (tracker_history, risk_weights) sınıf içinde korunmuş, dışarıdan doğrudan müdahale engellenmiştir.
+
+ Veri Yapıları ve Algoritmalar
+Performans optimizasyonu için aşağıdaki veri yapıları tercih edilmiştir:
+
+Deque: Nesne hareket geçmişi (Trajectory) için sabit boyutlu kuyruk yapısı kullanılarak bellek yönetimi sağlanmıştır.
+
+Set (Küme): Benzersiz nesne sayımı için set kullanılarak O(1) karmaşıklığında veri tekrarı önlenmiştir.
+
+Algoritmalar:
+
+Öklid Mesafesi: Hız tahmini için.
+
+Point-in-Polygon (Ray Casting): Şerit ihlali tespiti için.
+
+  Lisans ve Telif Hakkı
+Bu projenin tüm hakları saklıdır (All Rights Reserved).
+
+Kaynak kodları sadece inceleme ve eğitim amaçlı erişime açıktır. İzin alınmadan ticari amaçla kullanılması, kopyalanması veya dağıtılması yasaktır.
+
+Copyright © 2026 Abdullah Şerefoğlu
+
+Not: Bu proje, Ankara Üniversitesi BOZ213 dersi kapsamında geliştirilmiştir.
