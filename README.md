@@ -45,6 +45,10 @@ Proje, **Python 3.10+** kullanılarak geliştirilmiştir. Aşağıdaki temel kü
 
 ---
 
+# Test Verileri (Test Data)
+Test videolarım: 1) https://www.pexels.com/video/dash-cam-footage-in-city-driving-4644521/
+                 2) https://www.pexels.com/video/a-video-footage-of-moving-cars-in-the-city-4644437/
+                 3) https://www.pexels.com/video/person-driving-in-a-city-street-under-a-blue-sky-4483549/
 ##  Kurulum ve Çalıştırma (Installation)
 
 Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
