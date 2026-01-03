@@ -705,7 +705,7 @@ class VideoThread(QThread):
         try:
             import qrcode
             # GitHub repo linki (Proje tesliminde bu linki güncelleyebilirsiniz)
-            qr = qrcode.make('https://github.com/mertsener/autonomous-vehicle-risk-analyzer') 
+            qr = qrcode.make('https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK') 
             qr_path = os.path.join(tempfile.gettempdir(), "report_qr.png")
             qr.save(qr_path)
             
@@ -1106,5 +1106,6 @@ python "otonom araç projem.py"
 #    (0.60, 0.65), 
 #    (0.85, 1.00), 
 #    (0.16, 1.00) 
+
 
 #   carla videoları için
