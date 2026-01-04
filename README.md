@@ -45,14 +45,19 @@ Proje, **Python 3.10+** kullanılarak geliştirilmiştir. Aşağıdaki temel kü
 
 ---
 
-# Test Verileri (Test Data)
-Test videolarım: 
+# Test Verileri (Demo Videoları)
+GitHub dosya boyutu sınırları (25MB) nedeniyle test videoları bu depoya eklenmemiştir. Projeyi test etmek için aşağıdaki telifsiz (royalty-free) örnek videoları bilgisayarınıza indirip kullanabilirsiniz:
 
 1- Pexels. Dash cam footage in city driving. Video Dataset 2024. https://www.pexels.com/video/dash-cam-footage-in-city-driving-4644521/ 
 
 2- Pexels. A video footage of moving cars in the city. Video Dataset 2024. https://www.pexels.com/video/a-video-footage-of-moving-cars-in-the-city-4644437/ 
 
 3- Pexels. Person driving in a city street under a blue sky. Video Dataset 2024. https://www.pexels.com/video/person-driving-in-a-city-street-under-a-blue-sky-4483549//n
+
+**Nasıl Test Edilir?**
+1. Yukarıdaki linklerden bir videoyu indirin.
+2. Uygulamayı çalıştırın (`python "otonom araç projem.py"`).
+3. Arayüzden **"Dosya Aç"** butonuna basarak indirdiğiniz videoyu seçin.
 
 ##  Kurulum ve Çalıştırma (Installation)
 
