@@ -63,7 +63,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 Terminali açın ve projeyi bilgisayarınıza indirin:
 
 ```bash
-git clone [https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git](https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK/blob/main/otonom%20ara%C3%A7%20projem.py)
+git clone https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git
 cd autonomous-vehicle-risk-analyzer
 
 2. Sanal Ortam Oluşturun (Önerilen)
