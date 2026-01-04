@@ -83,6 +83,8 @@ Windows için:
 Mac/Linux için:
 source venv/bin/activate
 ```
+   not: Eğer hata alırsanız "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process" bunu yapıştırıp tekrar deneyin.
+   
 3. Gereksinimleri Yükleyin
 Gerekli tüm kütüphaneleri (YOLO, OpenCV, PySide6 vb.) tek komutla yükleyin:
 ```
