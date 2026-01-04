@@ -92,31 +92,33 @@ Kurulum bittikten sonra projeyi çalıştırın:
 python "otonom araç projem.py"
 Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.
 ```
-🏗️ Yazılım Mimarisi ve OOP Prensipleri
-Bu proje, "Temiz Kod" (Clean Code) standartlarına ve Nesne Yönelimli Programlama (OOP) ilkelerine sadık kalınarak tasarlanmıştır.
+## 🏗️ Yazılım Mimarisi ve OOP Prensipleri
 
-1. Sınıflar ve Sorumluluklar
-MainWindow(QMainWindow): Kullanıcı arayüzünü yönetir. Ayarların kapsüllenmesi (Encapsulation) ve kullanıcı etkileşimlerinin işlenmesinden sorumludur.
+Bu proje, **"Temiz Kod" (Clean Code)** standartlarına ve **Nesne Yönelimli Programlama (OOP)** ilkelerine sadık kalınarak tasarlanmıştır.
 
-VideoThread(QThread): Görüntü işleme yükünü ana arayüzden ayırır (Multithreading). YOLO analizi, matematiksel hesaplamalar ve veri işleme bu sınıfta soyutlanmıştır (Abstraction).
+### 1. Sınıflar ve Sorumluluklar
+* **`MainWindow(QMainWindow)`:** Kullanıcı arayüzünü yönetir. Ayarların kapsüllenmesi (Encapsulation) ve kullanıcı etkileşimlerinin işlenmesinden sorumludur.
+* **`VideoThread(QThread)`:** Görüntü işleme yükünü ana arayüzden ayırır (Multithreading). YOLO analizi, matematiksel hesaplamalar ve veri işleme bu sınıfta soyutlanmıştır (Abstraction).
 
-2. Kullanılan OOP Prensipleri
-🧬 Kalıtım (Inheritance): VideoThread sınıfı QThread sınıfından; MainWindow sınıfı QMainWindow sınıfından türetilmiştir.
+### 2. Kullanılan OOP Prensipleri
+* 🧬 **Kalıtım (Inheritance):** `VideoThread` sınıfı `QThread` sınıfından; `MainWindow` sınıfı `QMainWindow` sınıfından türetilmiştir.
+* 🔄 **Çok Biçimlilik (Polymorphism):** `run()` ve `closeEvent()` gibi temel metotlar override edilerek projenin ihtiyaçlarına göre yeniden şekillendirilmiştir.
+* 🔒 **Kapsülleme (Encapsulation):** Kritik veriler (`tracker_history`, `risk_weights`) sınıf içinde korunmuş, dışarıdan doğrudan müdahale engellenmiştir.
 
-🔄 Çok Biçimlilik (Polymorphism): run() ve closeEvent() gibi temel metotlar override edilerek projenin ihtiyaçlarına göre yeniden şekillendirilmiştir.
+### 3. Veri Yapıları ve Algoritmalar
+Performans optimizasyonu için aşağıdaki veri yapıları tercih edilmiştir:
+* **Deque:** Nesne hareket geçmişi (Trajectory) için sabit boyutlu kuyruk yapısı kullanılarak bellek yönetimi sağlanmıştır.
+* **Set (Küme):** Benzersiz nesne sayımı için `set` kullanılarak O(1) karmaşıklığında veri tekrarı önlenmiştir.
+* **Algoritmalar:** Hız tahmini için *Öklid Mesafesi*, şerit ihlali tespiti için *Point-in-Polygon (Ray Casting)* kullanılmıştır.
 
-🔒 Kapsülleme (Encapsulation): Kritik veriler (tracker_history, risk_weights) sınıf içinde korunmuş, dışarıdan doğrudan müdahale engellenmiştir.
+---
 
-3. Veri Yapıları ve Algoritmalar
-Deque: Nesne hareket geçmişi (Trajectory) için sabit boyutlu kuyruk yapısı kullanılarak bellek yönetimi sağlanmıştır.
+## 📄 Lisans ve Telif Hakkı
 
-Set (Küme): Benzersiz nesne sayımı için set kullanılarak O(1) karmaşıklığında veri tekrarı önlenmiştir.
+Bu projenin tüm hakları saklıdır (All Rights Reserved).
 
-Algoritmalar: Hız tahmini için Öklid Mesafesi, şerit ihlali tespiti için Point-in-Polygon (Ray Casting) kullanılmıştır.
+Kaynak kodları sadece inceleme ve eğitim amaçlı erişime açıktır. İzin alınmadan ticari amaçla kullanılması, kopyalanması veya dağıtılması yasaktır.
 
-📄 Lisans ve Telif Hakkı
-Bu projenin tüm hakları saklıdır (All Rights Reserved). Kaynak kodları sadece inceleme ve eğitim amaçlı erişime açıktır.
+**Copyright © 2026 Abdullah Şerefoğlu**
 
-Copyright © 2026 Abdullah Şerefoğlu
-
-Bu proje, Ankara Üniversitesi BOZ213 dersi kapsamında geliştirilmiştir.
+*Not: Bu proje, Ankara Üniversitesi BOZ213 dersi kapsamında geliştirilmiştir.*
