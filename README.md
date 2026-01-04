@@ -85,11 +85,14 @@ source venv/bin/activate
 ```
 3. Gereksinimleri Yükleyin
 Gerekli tüm kütüphaneleri (YOLO, OpenCV, PySide6 vb.) tek komutla yükleyin:
-```pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] Pillow numpy
+```
+pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] Pillow numpy
 ```
 4. Uygulamayı Başlatın
 Kurulum bittikten sonra projeyi çalıştırın:
-```python "otonom araç projem.py"```
+```
+python "otonom araç projem.py"
+```
 Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.
 
 ## 🏗️ Yazılım Mimarisi ve OOP Prensipleri
