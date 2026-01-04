@@ -63,8 +63,8 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 Terminali açın ve projeyi bilgisayarınıza indirin:
 
 ```bash
-git clone https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git
-cd autonomous-vehicle-risk-analyzer
+git clone https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK.git
+cd BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK
 
 2. Sanal Ortam Oluşturun (Önerilen)
 Kütüphanelerin çakışmaması için sanal ortam kurun:
