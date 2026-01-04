@@ -47,6 +47,7 @@ Proje, **Python 3.10+** kullanılarak geliştirilmiştir. Aşağıdaki temel kü
 
 # Test Verileri (Test Data)
 Test videolarım: 
+
 1- Pexels. Dash cam footage in city driving. Video Dataset 2024. https://www.pexels.com/video/dash-cam-footage-in-city-driving-4644521/ 
 
 2- Pexels. A video footage of moving cars in the city. Video Dataset 2024. https://www.pexels.com/video/a-video-footage-of-moving-cars-in-the-city-4644437/ 
