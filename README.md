@@ -91,7 +91,7 @@ pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] P
 Kurulum bittikten sonra projeyi çalıştırın:
 python "otonom araç projem.py"
 Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.
-
+```
 🏗️ Yazılım Mimarisi ve OOP Prensipleri
 Bu proje, "Temiz Kod" (Clean Code) standartlarına ve Nesne Yönelimli Programlama (OOP) ilkelerine sadık kalınarak tasarlanmıştır.
 
