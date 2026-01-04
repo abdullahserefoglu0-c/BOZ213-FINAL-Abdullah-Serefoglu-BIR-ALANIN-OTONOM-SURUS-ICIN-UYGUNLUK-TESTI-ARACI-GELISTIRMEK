@@ -101,15 +101,13 @@ MainWindow(QMainWindow): Kullanıcı arayüzünü yönetir. Ayarların kapsülle
 VideoThread(QThread): Görüntü işleme yükünü ana arayüzden ayırır (Multithreading). YOLO analizi, matematiksel hesaplamalar ve veri işleme bu sınıfta soyutlanmıştır (Abstraction).
 
 2. Kullanılan OOP Prensipleri
-Kalıtım (Inheritance): VideoThread sınıfı QThread sınıfından; MainWindow sınıfı QMainWindow sınıfından türetilmiştir.
+🧬 Kalıtım (Inheritance): VideoThread sınıfı QThread sınıfından; MainWindow sınıfı QMainWindow sınıfından türetilmiştir.
 
-Çok Biçimlilik (Polymorphism): run() ve closeEvent() gibi temel metotlar override edilerek projenin ihtiyaçlarına göre yeniden şekillendirilmiştir.
+🔄 Çok Biçimlilik (Polymorphism): run() ve closeEvent() gibi temel metotlar override edilerek projenin ihtiyaçlarına göre yeniden şekillendirilmiştir.
 
-Kapsülleme (Encapsulation): Kritik veriler (tracker_history, risk_weights) sınıf içinde korunmuş, dışarıdan doğrudan müdahale engellenmiştir.
+🔒 Kapsülleme (Encapsulation): Kritik veriler (tracker_history, risk_weights) sınıf içinde korunmuş, dışarıdan doğrudan müdahale engellenmiştir.
 
 3. Veri Yapıları ve Algoritmalar
-Performans optimizasyonu için aşağıdaki veri yapıları tercih edilmiştir:
-
 Deque: Nesne hareket geçmişi (Trajectory) için sabit boyutlu kuyruk yapısı kullanılarak bellek yönetimi sağlanmıştır.
 
 Set (Küme): Benzersiz nesne sayımı için set kullanılarak O(1) karmaşıklığında veri tekrarı önlenmiştir.
@@ -117,10 +115,8 @@ Set (Küme): Benzersiz nesne sayımı için set kullanılarak O(1) karmaşıklı
 Algoritmalar: Hız tahmini için Öklid Mesafesi, şerit ihlali tespiti için Point-in-Polygon (Ray Casting) kullanılmıştır.
 
 📄 Lisans ve Telif Hakkı
-Bu projenin tüm hakları saklıdır (All Rights Reserved).
-
-Kaynak kodları sadece inceleme ve eğitim amaçlı erişime açıktır. İzin alınmadan ticari amaçla kullanılması, kopyalanması veya dağıtılması yasaktır.
+Bu projenin tüm hakları saklıdır (All Rights Reserved). Kaynak kodları sadece inceleme ve eğitim amaçlı erişime açıktır.
 
 Copyright © 2026 Abdullah Şerefoğlu
 
-Not: Bu proje, Ankara Üniversitesi BOZ213 dersi kapsamında geliştirilmiştir.
+Bu proje, Ankara Üniversitesi BOZ213 dersi kapsamında geliştirilmiştir.
