@@ -59,23 +59,31 @@ Test videolarım:
 Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
 
 ### 1. Repoyu Klonlayın
+Terminali açın ve projeyi bilgisayarınıza indirin:
+
 ```bash
-git clone [[https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git](https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git)](https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK/tree/main)
+git clone [https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git](https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git)
 cd autonomous-vehicle-risk-analyzer
+
 2. Sanal Ortam Oluşturun (Önerilen)
-Bash
+Kütüphanelerin çakışmaması için sanal ortam kurun:
 
 python -m venv venv
+
 # Windows için:
 .\venv\Scripts\activate
+
 # Mac/Linux için:
 source venv/bin/activate
+
 3. Gereksinimleri Yükleyin
-Bash
+Gerekli tüm kütüphaneleri (YOLO, OpenCV, PySide6 vb.) tek komutla yükleyin:
 
 pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] Pillow numpy
+
 4. Uygulamayı Başlatın
-Bash
+
+Kurulum bittikten sonra projeyi çalıştırın:
 
 python "otonom araç projem.py"
 (Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.)
