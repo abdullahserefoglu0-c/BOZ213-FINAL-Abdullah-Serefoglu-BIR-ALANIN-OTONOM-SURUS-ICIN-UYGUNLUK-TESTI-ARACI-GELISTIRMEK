@@ -65,7 +65,7 @@ Terminali açın ve projeyi bilgisayarınıza indirin:
 git clone [https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git](https://github.com/mertsener/autonomous-vehicle-risk-analyzer.git)
 cd autonomous-vehicle-risk-analyzer
 
-2. Sanal Ortam Oluşturun (Önerilen)
+### 2. Sanal Ortam Oluşturun (Önerilen)
 Kütüphanelerin çakışmaması için sanal ortam kurun:
 
 python -m venv venv
@@ -76,12 +76,12 @@ python -m venv venv
 # Mac/Linux için:
 source venv/bin/activate
 
-3. Gereksinimleri Yükleyin
+### 3. Gereksinimleri Yükleyin
 Gerekli tüm kütüphaneleri (YOLO, OpenCV, PySide6 vb.) tek komutla yükleyin:
 
 pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] Pillow numpy
 
-4. Uygulamayı Başlatın
+### 4. Uygulamayı Başlatın
 
 Kurulum bittikten sonra projeyi çalıştırın:
 
