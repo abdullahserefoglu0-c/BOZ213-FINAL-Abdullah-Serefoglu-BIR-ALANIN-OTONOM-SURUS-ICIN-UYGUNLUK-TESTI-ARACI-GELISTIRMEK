@@ -59,16 +59,18 @@ GitHub dosya boyutu sınırları (25MB) nedeniyle test videoları bu depoya ekle
 2. Uygulamayı çalıştırın (`python "otonom araç projem.py"`).
 3. Arayüzden **"Dosya Aç"** butonuna basarak indirdiğiniz videoyu seçin.
 
-##  Kurulum ve Çalıştırma (Installation)
+---
 
-Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
+## ⚙️ Kurulum ve Çalıştırma
+
+Projeyi bilgisayarınızda çalıştırmak için sırasıyla şu adımları izleyin:
 
 ### 1. Repoyu Klonlayın
 
 Terminali açın ve projeyi indirin:
 
 ```bash
-git clone [https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK.git](https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK.git)
+git clone https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK.git
 cd BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK
 2. Sanal Ortam Oluşturun (Önerilen)
 Kütüphanelerin çakışmaması için sanal ortam kurun:
