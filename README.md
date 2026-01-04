@@ -72,33 +72,23 @@ Terminali açın ve projeyi indirin:
 ```bash
 git clone https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK.git
 cd BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK
+
 2. Sanal Ortam Oluşturun (Önerilen)
 Kütüphanelerin çakışmaması için sanal ortam kurun:
-
-Bash
-
 python -m venv venv
+
 Windows için:
-
-Bash
-
 .\venv\Scripts\activate
+
 Mac/Linux için:
-
-Bash
-
 source venv/bin/activate
+
 3. Gereksinimleri Yükleyin
 Gerekli tüm kütüphaneleri (YOLO, OpenCV, PySide6 vb.) tek komutla yükleyin:
-
-Bash
-
 pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] Pillow numpy
+
 4. Uygulamayı Başlatın
 Kurulum bittikten sonra projeyi çalıştırın:
-
-Bash
-
 python "otonom araç projem.py"
 Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.
 
