@@ -65,38 +65,42 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 
 ### 1. Repoyu Klonlayın
 
-Terminali açın ve projeyi bilgisayarınıza indirin:
+Terminali açın ve projeyi indirin:
 
 ```bash
-git clone  https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK
+git clone [https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK.git](https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK.git)
 cd BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK
-
 2. Sanal Ortam Oluşturun (Önerilen)
 Kütüphanelerin çakışmaması için sanal ortam kurun:
 
+Bash
+
 python -m venv venv
+Windows için:
 
-# Windows için:
+Bash
+
 .\venv\Scripts\activate
+Mac/Linux için:
 
-# Mac/Linux için:
+Bash
+
 source venv/bin/activate
-
 3. Gereksinimleri Yükleyin
 Gerekli tüm kütüphaneleri (YOLO, OpenCV, PySide6 vb.) tek komutla yükleyin:
 
+Bash
+
 pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] Pillow numpy
-
 4. Uygulamayı Başlatın
-
 Kurulum bittikten sonra projeyi çalıştırın:
 
+Bash
+
 python "otonom araç projem.py"
-(Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.)
+Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.
 
----
-
- Yazılım Mimarisi ve OOP Prensipleri
+🏗️ Yazılım Mimarisi ve OOP Prensipleri
 Bu proje, "Temiz Kod" (Clean Code) standartlarına ve Nesne Yönelimli Programlama (OOP) ilkelerine sadık kalınarak tasarlanmıştır.
 
 1. Sınıflar ve Sorumluluklar
@@ -111,20 +115,16 @@ Kalıtım (Inheritance): VideoThread sınıfı QThread sınıfından; MainWindow
 
 Kapsülleme (Encapsulation): Kritik veriler (tracker_history, risk_weights) sınıf içinde korunmuş, dışarıdan doğrudan müdahale engellenmiştir.
 
- Veri Yapıları ve Algoritmalar
+3. Veri Yapıları ve Algoritmalar
 Performans optimizasyonu için aşağıdaki veri yapıları tercih edilmiştir:
 
 Deque: Nesne hareket geçmişi (Trajectory) için sabit boyutlu kuyruk yapısı kullanılarak bellek yönetimi sağlanmıştır.
 
 Set (Küme): Benzersiz nesne sayımı için set kullanılarak O(1) karmaşıklığında veri tekrarı önlenmiştir.
 
-Algoritmalar:
+Algoritmalar: Hız tahmini için Öklid Mesafesi, şerit ihlali tespiti için Point-in-Polygon (Ray Casting) kullanılmıştır.
 
-Öklid Mesafesi: Hız tahmini için.
-
-Point-in-Polygon (Ray Casting): Şerit ihlali tespiti için.
-
-  Lisans ve Telif Hakkı
+📄 Lisans ve Telif Hakkı
 Bu projenin tüm hakları saklıdır (All Rights Reserved).
 
 Kaynak kodları sadece inceleme ve eğitim amaçlı erişime açıktır. İzin alınmadan ticari amaçla kullanılması, kopyalanması veya dağıtılması yasaktır.
