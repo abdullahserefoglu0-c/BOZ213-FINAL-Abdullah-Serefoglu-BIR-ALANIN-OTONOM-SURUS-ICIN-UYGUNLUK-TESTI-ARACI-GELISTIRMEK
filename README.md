@@ -55,7 +55,7 @@ GitHub dosya boyutu sınırları (25MB) nedeniyle test videoları bu depoya ekle
 3- Pexels. Person driving in a city street under a blue sky. Video Dataset 2024. https://www.pexels.com/video/person-driving-in-a-city-street-under-a-blue-sky-4483549//n
 
 **Nasıl Test Edilir?**
-1. Yukarıdaki linklerden bir videoyu indirin.
+1. Yukarıdaki linklerden bir videoyu indirin (önerim 1.videoyu indirmeniz.).
 2. Uygulamayı çalıştırın (`python "otonom araç projem.py"`).
 3. Arayüzden **"Dosya Aç"** butonuna basarak indirdiğiniz videoyu seçin.
 
