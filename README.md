@@ -74,6 +74,7 @@ git clone https://github.com/abdullahserefoglu0-c/BOZ213-FINAL-Abdullah-Serefogl
 cd BOZ213-FINAL-Abdullah-Serefoglu-BIR-ALANIN-OTONOM-SURUS-ICIN-UYGUNLUK-TESTI-ARACI-GELISTIRMEK
 ```
 2. Sanal Ortam Oluşturun (Önerilen)
+
 Kütüphanelerin çakışmaması için sanal ortam kurun:
 ```python -m venv venv
 
@@ -86,11 +87,13 @@ source venv/bin/activate
    not: Eğer hata alırsanız "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process" bu yazıyı terminal'e yapıştırıp tekrar deneyin.
    
 3. Gereksinimleri Yükleyin
+
 Gerekli tüm kütüphaneleri (YOLO, OpenCV, PySide6 vb.) tek komutla yükleyin:
 ```
 pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] Pillow numpy
 ```
 4. Uygulamayı Başlatın
+
 Kurulum bittikten sonra projeyi çalıştırın:
 ```
 python "otonom araç projem.py"
