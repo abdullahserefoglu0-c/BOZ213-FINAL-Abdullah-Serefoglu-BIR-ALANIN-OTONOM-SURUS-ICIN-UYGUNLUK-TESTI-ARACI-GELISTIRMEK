@@ -96,7 +96,7 @@ pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] P
 
 Kurulum bittikten sonra projeyi çalıştırın:
 ```
-python "BİR ALANIN OTONOM SÜRÜŞ İÇİN UYGUNLUK TESTİ ARACI.py"
+py "BİR_ALANIN_OTONOM_SÜRÜŞ_İÇİN_UYGUNLUK_TESTİ_ARACI_GELİŞTİRMEK.py"
 ```
 Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.
 
