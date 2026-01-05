@@ -1020,7 +1020,7 @@ if __name__ == '__main__':
 
 #  .\venv\Scripts\activate
  #  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
- #  py "otonom araç projem.py"
+ #  py "BİR_ALANIN_OTONOM_SÜRÜŞ_İÇİN_UYGUNLUK_TESTİ_ARACI_GELİŞTİRMEK.py"
 
 
 
@@ -1109,3 +1109,4 @@ python "otonom araç projem.py"
 
 
 #   carla videoları için
+
