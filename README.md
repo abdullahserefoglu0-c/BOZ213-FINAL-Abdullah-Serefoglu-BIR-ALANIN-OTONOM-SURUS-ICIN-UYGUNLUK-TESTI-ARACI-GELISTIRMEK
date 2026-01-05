@@ -96,7 +96,7 @@ pip install ultralytics opencv-python PySide6 reportlab matplotlib qrcode[pil] P
 
 Kurulum bittikten sonra projeyi çalıştırın:
 ```
-python "otonom araç projem.py"
+python "BİR ALANIN OTONOM SÜRÜŞ İÇİN UYGUNLUK TESTİ ARACI.py"
 ```
 Not: İlk çalıştırmada yolov8n.pt modeli otomatik olarak indirilecektir, internet bağlantısı gerektirir.
 
