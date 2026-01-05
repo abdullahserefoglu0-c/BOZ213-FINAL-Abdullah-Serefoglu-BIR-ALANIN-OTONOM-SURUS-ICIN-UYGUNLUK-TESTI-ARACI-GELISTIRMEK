@@ -56,7 +56,7 @@ GitHub dosya boyutu sınırları (25MB) nedeniyle test videoları bu depoya ekle
 
 **Nasıl Test Edilir?**
 1. Yukarıdaki linklerden bir videoyu indirin (önerim 1.videoyu indirmeniz.).
-2. Uygulamayı çalıştırın (`python "otonom araç projem.py"`).
+2. Uygulamayı çalıştırın (`py "BİR_ALANIN_OTONOM_SÜRÜŞ_İÇİN_UYGUNLUK_TESTİ_ARACI_GELİŞTİRMEK.py"`).
 3. Arayüzden **"Dosya Aç"** butonuna basarak indirdiğiniz videoyu seçin.
 
 ---
