@@ -1,6 +1,6 @@
 """
 PROJE: BİR ALANIN OTONOM SÜRÜŞ İÇİN UYGUNLUK TESTİ ARACI GELİŞTİRMEK
-DERS: Nesne Yönelimli Programlama (OOP)
+DERS: Nesne Tabanlı Programlama (OOP)
 YAZAR: ABDULLAH ŞEREFOĞLU
 TARİH: 01.01.2026
 
@@ -1109,4 +1109,5 @@ python "otonom araç projem.py"
 
 
 #   carla videoları için
+
 
